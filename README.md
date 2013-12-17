@@ -10,6 +10,8 @@ holonic relationships can be described through a [directed acyclic graph](http:/
 
 ## implementation
 
+- users are on [SQL database](http://bookshelfjs.org/)
+- holonic relationships are on [graph database](https://github.com/brikteknologier/seraph-model)
 - [HTTP keys](payswarm.com/specs/source/web-keys/)
 - [OpenID Connect](http://openid.net/connect) or [BrowserID](https://developer.mozilla.org/en-US/Persona)
 
