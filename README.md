@@ -1,6 +1,6 @@
 # identity
 
-define holonic identities for people
+define [holon](en.wikipedia.org/wiki/Holon_%28philosophy%29)ic identities for people
 
 ## design
 
@@ -10,8 +10,7 @@ holonic relationships can be described through a [directed acyclic graph](http:/
 
 ## implementation
 
-- users are on [SQL database](http://bookshelfjs.org/)
-- holonic relationships are on [graph database](https://github.com/brikteknologier/seraph-model)
-- [HTTP keys](payswarm.com/specs/source/web-keys/)
-- [OpenID Connect](http://openid.net/connect) or [BrowserID](https://developer.mozilla.org/en-US/Persona)
+- holons are stored on a [JSON-LD graph database](https://github.com/mcollina/levelgraph-jsonld)
+- follows [Web Identity spec](https://web-payments.org/specs/source/web-identity/)
+- exports [BrowserID](https://developer.mozilla.org/en-US/Persona)
 
