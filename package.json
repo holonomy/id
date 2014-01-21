@@ -30,7 +30,8 @@
     "level-writestream": "*",
     "levelgraph": "~0.8.2",
     "levelgraph-jsonld": "git+https://github.com/mcollina/levelgraph-jsonld.git",
-    "jshint": "~2.4.2"
+    "jshint": "~2.4.2",
+    "npm-release": "0.0.4-3"
   },
   "devDependencies": {
     "chai": "~1.8.1",
