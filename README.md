@@ -1,6 +1,13 @@
 # identity
 
+### WORK IN PROGRESS
+
 define [holon](en.wikipedia.org/wiki/Holon_%28philosophy%29)ic identities for people
+
+[![build status](https://travis-ci.org/holonomy/identity.png)](https://travis-ci.org/holonomy/identity)
+[![coverage status](https://coveralls.io/repos/holonomy/identity/badge.png)](https://coveralls.io/r/holonomy/identity)
+[![dependency status](https://david-dm.org/holonomy/identity.png?theme=shields.io)](https://david-dm.org/holonomy/identity)
+[![devDependency status](https://david-dm.org/holonomy/identity/dev-status.png?theme=shields.io)](https://david-dm.org/holonomy/identity#info=devDependencies)
 
 ## design
 
