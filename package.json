@@ -1,0 +1,43 @@
+{
+  "name": "holonomy-identity",
+  "version": "0.1.0",
+  "description": "identity for holons",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --recursive test",
+    "coverage": "rm -rf coverage; istanbul cover _mocha -- --recursive --reporter spec --bail",
+    "publish-coverage": "cat coverage/lcov.info | coveralls",
+    "lint": "jshint src ;true",
+    "release": "npm-release patch -m \"version++\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/holonomy/id.git"
+  },
+  "keywords": [
+    "holon",
+    "identity",
+    "id"
+  ],
+  "author": "Michael Williams <dinosaur@riseup.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holonomy/id/issues"
+  },
+  "homepage": "https://github.com/holonomy/id",
+  "dependencies": {
+    "level-sublevel": "*",
+    "level-writestream": "*",
+    "levelgraph": "~0.8.2",
+    "levelgraph-jsonld": "git+https://github.com/mcollina/levelgraph-jsonld.git",
+    "jshint": "~2.4.2"
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "lodash": "~2.4.1",
+    "mocha": "~1.17.0",
+    "coveralls": "~2.6.1",
+    "istanbul": "~0.2.4",
+    "level-test": "~1.6.0"
+  }
+}
