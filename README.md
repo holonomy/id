@@ -18,7 +18,7 @@ holonic relationships can be described through a [directed acyclic graph](http:/
 ## implementation
 
 - holons are stored on a [JSON-LD graph database](https://github.com/mcollina/levelgraph-jsonld)
-- implements [Organization Ontology spec](http://www.w3.org/TR/vocab-org/)
+- implements [FOAF Vocabular spec](http://xmlns.com/foaf/spec/) or [Organization Ontology spec](http://www.w3.org/TR/vocab-org/)
 - implements [Web Identity spec](https://web-payments.org/specs/source/web-identity/)
 - exports [BrowserID](https://developer.mozilla.org/en-US/Persona)
 
