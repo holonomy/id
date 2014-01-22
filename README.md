@@ -11,14 +11,13 @@ define [holon](en.wikipedia.org/wiki/Holon_%28philosophy%29)ic identities for pe
 
 ## design
 
-holonic relationships can be described through a [directed acyclic graph](http://en.wikipedia.org/wiki/Directed_acyclic_graph) where
-  - each vertex is a holon
-  - each directed edge is an inclusion of a holon in another holon
-
-## implementation
-
-- holons are stored on a [JSON-LD graph database](https://github.com/mcollina/levelgraph-jsonld)
-- implements [FOAF Vocabular spec](http://xmlns.com/foaf/spec/) or [Organization Ontology spec](http://www.w3.org/TR/vocab-org/)
-- implements [Web Identity spec](https://web-payments.org/specs/source/web-identity/)
-- exports [BrowserID](https://developer.mozilla.org/en-US/Persona)
-
+- holons are described as [directed acyclic graph](http://en.wikipedia.org/wiki/Directed_acyclic_graph) using [linked data](http://json-ld.org/spec/latest/json-ld/).
+  - leaf holons (those without subholons) are of type [foaf:Person](http://xmlns.com/foaf/spec/#term_Person)].
+  - all other holons are of type [foaf:Group](http://xmlns.com/foaf/spec/#term_Group).
+    - inclusion of a holon in another holon is expressed through the [foaf:member](foaf:member) property.
+- holons are stored in a [graph database](https://github.com/mcollina/levelgraph-jsonld).
+- all holons implement the [Web Identity spec](https://web-payments.org/specs/source/web-identity/).
+  - all holons should export a [BrowserID](https://developer.mozilla.org/en-US/Persona)
+  - this means even a foaf:Group is a first-class identity that you can authenticate with and execute commands as.
+- other possible options:
+  - [Organization Ontology spec](http://www.w3.org/TR/vocab-org/)
